@@ -15,9 +15,7 @@ public class GameMenu : MonoBehaviour {
         startMenu = startMenu.GetComponent<Canvas>();
 
         spinDetectionText = spinDetectionText.GetComponent<Button>();
-
-
-
+        exitText = exitText.GetComponent<Button>();
 
     }
 	
@@ -28,6 +26,8 @@ public class GameMenu : MonoBehaviour {
 
     public void exitGame()
     {
+
+        Application.Quit();
 
 
     }
