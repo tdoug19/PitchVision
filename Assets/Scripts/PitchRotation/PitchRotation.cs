@@ -50,14 +50,22 @@ public class PitchRotation : MonoBehaviour {
 
             }
 
-            if(Input.GetKey("up"))
+            if(Input.GetKey("down"))
             {
                 //Slow time down
                 Time.timeScale = Time.timeScale/1.1f;
 
             }
 
-            if(Input.GetKey("f"))
+            if (Input.GetKey("up"))
+            {
+                //Slow time down
+                Time.timeScale = Time.timeScale * 1.1f;
+
+            }
+
+
+            if (Input.GetKey("f"))
             {
                 pitch.setPitchType("Fastball");
 
@@ -69,6 +77,28 @@ public class PitchRotation : MonoBehaviour {
 
             }
 
+            if (Input.GetKey("r"))
+            {
+                
+                float rndFloat = Random.Range(1.5f, 2.5F);
+
+                int rndPitch = (int)rndFloat;
+
+
+                switch (rndPitch)
+                {
+                    case 1: 
+                            pitch.setPitchType("Fastball");
+                        break;
+
+                    case 2:
+                            pitch.setPitchType("Slider");
+                        break;
+
+                }
+
+                
+            }
 
 
         }

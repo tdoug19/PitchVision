@@ -19,17 +19,17 @@ public class TestScripts : MonoBehaviour {
         //The rigid body is the ball;
         rb = GetComponent<Rigidbody>();
         
-        /*  Test the Fastball
+        //  Test the Fastball
         pitch = new Fastball();
         pitch.setRotationSpeed(40.0f * 360.0f);
         transform.Rotate(new Vector3(0.0f, 0.0f, 90.0f));
-        */
+        
 
 
 
-        pitch = new Slider();
-        pitch.setRotationSpeed(5.0f * 360.0f);
-        transform.Rotate(new Vector3(90.0f, 0.0f, 0.0f));
+       // pitch = new Slider();
+        //pitch.setRotationSpeed(5.0f * 360.0f);
+        //transform.Rotate(new Vector3(95.0f, 0.0f, 0.0f));
 
 
     }
