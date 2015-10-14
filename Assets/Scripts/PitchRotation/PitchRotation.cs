@@ -26,11 +26,6 @@ public class PitchRotation : MonoBehaviour {
         
 
         intialRot = transform.rotation;
-        
-
-
-        //transform.Rotate(initialRotation);
-        //rb.rotation.Set(0.0f, 0.0f, 90.0f, 0.0f);
         acceptUserInput = true;
     }
 
@@ -38,7 +33,6 @@ public class PitchRotation : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
-        //transform.Rotate(Vector3.up, ((360 * 5) * Time.deltaTime));
         //Are we at the state to accept user input
         if (acceptUserInput)
         {
@@ -81,9 +75,7 @@ public class PitchRotation : MonoBehaviour {
             {
                 
                 float rndFloat = Random.Range(1.5f, 2.5F);
-
                 int rndPitch = (int)rndFloat;
-
 
                 switch (rndPitch)
                 {
@@ -142,6 +134,11 @@ public class PitchRotation : MonoBehaviour {
             rb.position = new Vector3(-0.75f, 2.5f, 18.404f);
         
             transform.rotation  =  intialRot;
+
+
+            
+
+
         }
     }
 
@@ -180,24 +177,5 @@ public class PitchRotation : MonoBehaviour {
 
 
     }
-
-
-    private void ballInFlightState()
-    {
-        
-
-
-    }
-
-    private void pitchDoneState()
-    {
-
-
-
-    }
-
-
-
-
 
 }
