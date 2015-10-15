@@ -13,18 +13,21 @@ public class PitchRotation : MonoBehaviour {
     private bool pitchDone = false;
     private Vector3 initialRotation;
     private Quaternion intialRot;
+    private GameObject spinningFastballModel;
+    private GameObject spinningSliderModel;
 
     private PitchType pitch = new PitchType ();
 	
 
+    
 	// Use this for initialization
 
 	void Start () {
         //The rigid body is the ball;
         rb = GetComponent<Rigidbody> ();
         initialRotation = transform.localEulerAngles;
-        
-
+        spinningFastballModel = GameObject.Find("selectFastball");
+        spinningSliderModel = GameObject.Find("selectSlider");
         intialRot = transform.rotation;
         acceptUserInput = true;
     }

@@ -10,6 +10,6 @@ public class SliderSpin : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Rotate(Vector3.up, ((45) * Time.deltaTime));
+        transform.Rotate(Vector3.up, ((180) * Time.deltaTime));
     }
 }

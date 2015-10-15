@@ -12,7 +12,7 @@ public class FastballSpin : MonoBehaviour {
 	void Update () {
 
 
-        transform.Rotate(Vector3.down, ((45) * Time.deltaTime));
+        transform.Rotate(Vector3.down, ((180) * Time.deltaTime));
 
     }
 }
